@@ -1,0 +1,50 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body {
+    background-image: url(astronauta.jpg);
+    background-size: cover;
+}
+nav {
+    max-width: 100%;
+    margin: auto;
+    /*background-color:rgba(16, 4, 122, 0.4);*/
+    font-size: 20px;
+    margin-top: 30px;
+}
+.menu-horizontal {
+    list-style: none;
+    display: flex;    
+    justify-content:space-around;
+}
+.menu-horizontal > li > a {
+    display: block;
+    padding: 18px 18px;
+    color: white;
+    text-decoration: none;
+}
+.menu-horizontal > li:hover {
+background-color: rgba(33, 72, 247, 0.4);
+}
+.menu-vertical {
+    position: absolute;
+    display: none;
+    list-style: none;
+    width: 200px;
+    background-color: rgba(16, 4, 122, 0.4);
+}
+.menu-horizontal:hover .menu-vertical{
+    display: block;
+    }
+.menu-vertical li:hover {
+    background-color:  rgba(33, 72, 247, 0.4);
+}
+.menu-vertical li a {
+    display: block;
+    color: white;
+    padding: 15px 15px 15px 20px;
+    text-decoration: none;
+}
